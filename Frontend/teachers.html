@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Teachers Dashboard</h1>
+        <a href="index.html">Back to Home</a>
+    </header>
+    <main>
+        <button onclick="fetchTeachers()">Load Teachers</button>
+        <table id="teachersTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Subject</th>
+                    <th>Class Assigned</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </main>
+    <script src="scripts/teachers.js"></script>
+</body>
+</html>

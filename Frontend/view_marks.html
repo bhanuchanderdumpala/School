@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Marks - MayankReddy Public School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Student Marks</h1>
+    </header>
+
+    <div class="container">
+        <label for="admission_no">Enter Admission No:</label>
+        <input type="text" id="admission_no">
+        <button onclick="fetchMarks()">View Marks</button>
+
+        <table id="marks-table">
+            <thead>
+                <tr>
+                    <th>Exam Type</th>
+                    <th>Subject</th>
+                    <th>Marks</th>
+                    <th>Max Marks</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script src="scripts/view_marks.js"></script>
+</body>
+</html>

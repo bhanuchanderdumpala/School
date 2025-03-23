@@ -1,5 +1,5 @@
-/* General Page Styling */
-html, body {
+
+/*html, body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -8,9 +8,9 @@ html, body {
     font-family: Arial, sans-serif;
 }
 
-/* Background Image with Opacity */
+
 body {
-    background-image: url('./assets/school.jpeg'); /* Corrected relative path */
+    background-image: url('./assets/school.jpeg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@ body {
     position: relative;
 }
 
-/* Overlay Effect */
+
 body::before {
     content: "";
     position: absolute;
@@ -26,13 +26,13 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.3); /* Adjusted transparency */
+    background: rgba(255, 255, 255, 0.3); 
     z-index: -1;
 }
 
-/* Header Styling */
+
 header {
-    background-color: #00274D; /* Dark blue shade */
+    background-color: #00274D; 
     color: white;
     padding: 15px;
     display: flex;
@@ -49,31 +49,31 @@ h1 {
     font-size: 24px;
 }
 
-/* Main Content */
+
 .container {
-    width: 80%;
+    width: 70%;
     margin: auto;
-    background: white;
+    background: rgb(213, 228, 199);
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 10px rgba(176, 89, 89, 0.2);
     margin-top: 20px;
     flex: 1;
     padding-bottom: 50px;
+    
 }
 
-/* Back Button */
 .back-button {
     padding: 8px 15px;
     font-size: 14px;
-    background-color: #D9534F; /* Red */
+    background-color: #D9534F; 
     color: white;
     border: none;
     cursor: pointer;
     border-radius: 5px;
 }
 
-/* Student Table */
+
 table {
     width: 100%;
     margin-top: 20px;
@@ -86,7 +86,7 @@ th, td {
     text-align: left;
 }
 
-/* Dashboard Buttons */
+
 .dashboard {
     display: flex;
     justify-content: center;
@@ -96,20 +96,20 @@ th, td {
 .dashboard-item {
     text-decoration: none;
     padding: 15px 30px;
-    background-color: #0055A5; /* Blue */
+    background-color: #0055A5; 
     color: white;
     font-size: 18px;
     border-radius: 5px;
 }
 
-/* Button Alignment */
+
 .button-container {
     display: flex;
-    justify-content: space-between; /* Aligns buttons to left & right */
+    justify-content: space-between; 
     margin-bottom: 15px;
 }
 
-/* Class Buttons */
+
 .class-buttons {
     display: flex;
     gap: 10px;
@@ -124,10 +124,10 @@ th, td {
     border-radius: 5px;
 }
 
-/* Add Student Button Alignment */
+
 .add-student-container {
     display: flex;
-    /* justify-content: flex-end; Moves button to the right */
+   
 }
 
 .add-student-btn {
@@ -140,7 +140,6 @@ th, td {
     
 }
 
-/* Form Styling */
 .form-group {
     display: flex;
     align-items: center;
@@ -160,7 +159,7 @@ input, select {
     border-radius: 5px;
 }
 
-/* Footer */
+
 footer {
     width: 100%;
     text-align: center;
@@ -169,4 +168,293 @@ footer {
     color: #0A0A0A;
     position: relative;
     bottom: 0;
+}
+
+/* General Page Styling */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', Arial, sans-serif; /* Modern, clean font */
+}
+
+/* Background Image with Opacity */
+body {
+    background: linear-gradient(135deg, #E3F2FD, #BBDEFB); /* Soft blue gradient background */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Overlay Effect */
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2); /* Light overlay for depth */
+    z-index: -1;
+}
+
+/* Header Styling */
+header {
+    color: rgb(255, 255, 255);
+    display: flex;
+
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+    background: linear-gradient(90deg, rgb(25, 118, 210), rgb(66, 165, 245));
+    padding: 10px;
+    transition: background 0.3s;
+}
+
+header:hover {
+    background: linear-gradient(90deg, #1565C0, #2196F3); /* Darker gradient on hover */
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Circular logo */
+    transition: transform 0.3s; /* Hover animation */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+/* Header Title */
+h1 {
+    margin-left: 15px;
+    font-size: 24px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+    transition: color 0.3s;
+}
+
+h1:hover {
+    color: #FFEB3B; /* Yellow on hover */
+}
+
+/* Main Content */
+.container {
+    width: 70%;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    margin-top: 20px;
+    flex: 1;
+    padding-bottom: 50px;
+    transition: background 0.3s;
+}
+
+.container:hover {
+    background: rgba(255, 255, 255, 1); /* Fully opaque on hover */
+}
+
+/* Back Button */
+.back-button {
+    padding: 8px 15px;
+    font-size: 14px;
+    background: linear-gradient(135deg, #F44336, #EF5350); /* Red gradient */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px; /* Rounded */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s, color 0.3s;
+}
+
+.back-button:hover {
+    background: linear-gradient(135deg, #D32F2F, #E53935); /* Darker red gradient */
+    transform: scale(1.05); /* Slight zoom */
+    color: #FFEB3B; /* Yellow text on hover */
+}
+
+/* Student Table */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background: #E8F5E9; /* Light green for table */
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #B0BEC5; /* Soft gray border */
+    text-align: left;
+    transition: background 0.3s, color 0.3s;
+}
+
+th {
+    background: linear-gradient(135deg, #1976D2, #42A5F5); /* Blue gradient */
+    color: #FFFFFF;
+}
+
+th:hover, td:hover {
+    background: #BBDEFB; /* Light blue on hover */
+    color: #212121;
+}
+
+/* Dashboard Buttons */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.dashboard-item {
+    text-decoration: none;
+    padding: 15px 30px;
+    background: linear-gradient(135deg, #FFB300, #FFCA28); /* Yellow-orange gradient */
+    color: #212121;
+    font-size: 18px;
+    border-radius: 20px; /* Rounded */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s, color 0.3s;
+}
+
+.dashboard-item:hover {
+    background: linear-gradient(135deg, #FF9800, #FFB300); /* Orange gradient */
+    transform: scale(1.05);
+    color: #FFFFFF; /* White text on hover */
+}
+
+/* Button Alignment (Class Buttons) */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+/* Class Buttons */
+.button-container button {
+    padding: 10px;
+    background: linear-gradient(135deg, #1976D2, #42A5F5); /* Blue gradient */
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s, color 0.3s;
+}
+
+.button-container button:hover {
+    background: linear-gradient(135deg, #1565C0, #2196F3); /* Darker blue gradient */
+    transform: scale(1.05);
+    color: #FFEB3B; /* Yellow text on hover */
+}
+
+/* Add Student Button Alignment */
+.add-student-container {
+    display: flex;
+}
+
+
+.add-student-btn {
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #388E3C, #66BB6A); 
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s, transform 0.2s, color 0.3s;
+
+} 
+
+
+
+.add-student-btn:hover {
+    background: linear-gradient(135deg, #2E7D32, #4CAF50); /* Darker green gradient */
+    transform: scale(1.05);
+    color: #FFEB3B; /* Yellow text on hover */
+}
+
+/* Form Styling */
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    background: #E8F5E9; /* Light green background */
+    padding: 8px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.form-group:hover {
+    background: #C8E6C9; /* Slightly darker green on hover */
+}
+
+/* Form Labels */
+label {
+    width: 30%;
+    font-weight: bold;
+    color: #388E3C; /* Green text */
+    transition: color 0.3s;
+}
+
+label:hover {
+    color: #2E7D32; /* Darker green on hover */
+}
+
+/* Form Inputs */
+input, select {
+    width: 65%;
+    padding: 8px;
+    border: 2px solid #1976D2; /* Blue border */
+    border-radius: 5px;
+    background: #FFFFFF;
+    transition: border-color 0.3s, background 0.3s;
+}
+
+input:hover, select:hover {
+    border-color: #FF9800; /* Orange border on hover */
+    background: #FFF8E1; /* Light yellow background */
+}
+
+input:focus, select:focus {
+    border-color: #FFCA28; /* Bright yellow on focus */
+    background: #FFF8E1;
+    outline: none;
+}
+
+/* Footer */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(90deg, #BBDEFB, #E3F2FD); /* Light blue gradient */
+    color: #212121;
+    position: relative;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Top shadow */
+    transition: background 0.3s;
+}
+
+footer:hover {
+    background: linear-gradient(90deg, #90CAF9, #B3E5FC); /* Slightly darker gradient */
+}
+
+#datetime {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFEB3B; /* Yellow to stand out */
+    background: rgba(25, 118, 210, 0.8); /* Semi-transparent blue background */
+    padding: 5px 10px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, background 0.3s;
 }

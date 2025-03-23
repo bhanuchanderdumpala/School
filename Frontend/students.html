@@ -1,58 +1,4 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students - MayankReddy Public School</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="D:\School\Frontend\scripts\students.js" defer></script>
-</head>
-<body>
 
-    <header>
-        <img src="file:///D:/School/Frontend/assets/logo.png" alt="School Logo" class="logo">
-        <h1>MayankReddy Public School, Hyderabad</h1>
-    </header>
-
-    <div class="container">
-        <button class="back-button" onclick="goBack()">⬅ Back</button>
-        <h2>Students List</h2>
-        
-        <div class="class-container">
-            <button onclick="fetchStudents(6)">Class 6</button>
-            <button onclick="fetchStudents(7)">Class 7</button>
-            <button onclick="fetchStudents(8)">Class 8</button>
-            <button onclick="fetchStudents(9)">Class 9</button>
-            <button onclick="fetchStudents(10)">Class 10</button>
-        </div>
-
-        <div class="add-student-container">
-            <button class="add-student-btn" onclick="openAddStudentForm()">+ Add Student</button>
-        </div>
-
-        <table id="students-table">
-            <thead>
-                <tr>
-                    <th>Admission No</th>
-                    <th>Name</th>
-                    <th>Father's Name</th>
-                    <th>Class</th>
-                    <th>Mobile Number</th>
-                    <th>DOB</th>
-                </tr>
-            </thead>
-            <tbody>
-                <!-- Student data will be loaded here -->
-            <!-- </tbody>
-        </table>
-    </div>
-
-    <footer>
-        <p>Plot No: 128/1A, Alakpoor Township, Manikonda, Hyderabad-50081 | Mobile: 9959923542</p>
-    </footer>
-
-</body>
-</html> --> -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -66,8 +12,10 @@
 <body>
 
     <header>
-        <img src="assets/logo.png" alt="School Logo" class="logo">
+        
         <h1>MayankReddy Public School, Hyderabad</h1>
+    <a href="index.html"><img src="assets/logo.png" alt="School Logo" class="logo"></a>
+    <span id="datetime"></span>
     </header>
 
     <div class="container">
@@ -75,16 +23,21 @@
         <h2>Students List</h2>
         
         <div class="button-container">
-            <button onclick="fetchStudents(6)">Class 6</button>
-            <button onclick="fetchStudents(7)">Class 7</button>
-            <button onclick="fetchStudents(8)">Class 8</button>
-            <button onclick="fetchStudents(9)">Class 9</button>
-            <button onclick="fetchStudents(10)">Class 10</button>
+            <button onclick="fetchStudents(6)">Class-6</button>
+            <button onclick="fetchStudents(7)">Class-7</button>
+            <button onclick="fetchStudents(8)">Class-8</button>
+            <button onclick="fetchStudents(9)">Class-9</button>
+            <button onclick="fetchStudents(10)">Class-10</button>
         </div>
 
         <div class="add-student-container">
-            <a href="add_student.html" class="add-student-btn">+ Add Student</a>
+            <a href="add_student.html" class="add-student-btn"> + Add Student</a>
+            <a href="add_student.html" class="add-student-btn"> + Add Student Marks</a>
         </div>
+
+        
+
+
 
         <table id="students-table">
             <thead>
@@ -106,6 +59,7 @@
     <footer>
         <p>Plot No: 128/1A, Alakapoor Township, Manikonda, Hyderabad-50081 | Mobile: 9959923542</p>
     </footer>
+    <script src="scripts/datetime.js"></script>
 
 </body>
 </html>
